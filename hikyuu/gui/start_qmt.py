@@ -75,7 +75,7 @@ if __name__ == "__main__":
     hku_info("waiting all data loaded ...")
     while not sm.data_ready:
         import time
-        time.sleep(100)
+        time.sleep(10)
 
     stk_list = [s for s in sm if s.valid and s.type in (
         constant.STOCKTYPE_A, constant.STOCKTYPE_INDEX, constant.STOCKTYPE_ETF,

@@ -2,7 +2,7 @@ set_xmakever("2.8.2")
 
 -- project
 set_project("hikyuu")
-
+add_rules("plugin.compile_commands.autoupdate", {outputdir = "build"})
 add_rules("mode.debug", "mode.release")
 
 -- version
